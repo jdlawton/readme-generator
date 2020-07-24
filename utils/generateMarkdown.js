@@ -3,12 +3,21 @@ function generateMarkdown(data) {
 
   const {title, description, installation, usage, contribute, tests, ...contact} = data;
 
-  console.log(data);
+  //console.log(data);
   return `
   # ${title}
 
   ## Project Description
   ${description}
+
+  ## Table of Contents
+    * [Project Description](#description)
+    * [Installation Instructions](#installation)
+    * [Usage Instructions](#usage)
+    * License Info (Not Implemented Yet)
+    * [Contribution Info](#contribute)
+    * [Tests](#tests)
+    * [Questions](#questions)
 
   ## Installation Instructions
   ${installation}

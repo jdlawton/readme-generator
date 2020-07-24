@@ -5,7 +5,7 @@
   This application will prompt you for some information regarding your project, then generate a high quiality README file to include in your GitHub repo.
 
   ## Installation Instructions
-  undefined
+  The application uses node.js, so you will need to have that already installed on your computer. Then simply clone the repo and from the terminal, run 'node index.js'.
 
   ## Usage Instructions
   The application will ask you several questions regarding your project. As of now, each question is required. Answer all of the questions, and the application will then create a README file for you to include in your project. The README will include the following sections: Project Title, Project Description, Installation Instructions, Usage Instructions, License Information, Contribution Instructions, Test Info, and contact information for any questions.
