@@ -7,25 +7,25 @@ function generateMarkdown(data) {
   return `
   # ${title}
 
-  ## Project Description
+  ## Description
   ${description}
 
   ## Table of Contents
-    * [Project Description](#description)
-    * [Installation Instructions](#installation)
-    * [Usage Instructions](#usage)
+    * [Description](#description)
+    * [Installation](#installation)
+    * [Usage](#usage)
     * License Info (Not Implemented Yet)
-    * [Contribution Info](#contribute)
+    * [Contribution](#contribute)
     * [Tests](#tests)
     * [Questions](#questions)
 
-  ## Installation Instructions
+  ## Installation
   ${installation}
 
-  ## Usage Instructions
+  ## Usage
   ${usage}
 
-  ## Want to Contribute?
+  ## Contribution
   ${contribute}
 
   ## Tests
