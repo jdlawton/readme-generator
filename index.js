@@ -21,7 +21,7 @@ const questions = [
     {
         type: "input",
         name: "description",
-        message: "Please enter a project description.",
+        message: "Please enter a project description: ",
         validate: descInput => {
             if (descInput) {
                 return true;
@@ -34,7 +34,7 @@ const questions = [
     {
         type: "input",
         name: "installation",
-        message: "Please enter the application installation instructions.",
+        message: "Please enter the application installation instructions: ",
         validate: installInput => {
             if (installInput) {
                 return true;
@@ -47,7 +47,7 @@ const questions = [
     {
         type: "input",
         name: "usage",
-        message: "Please enter the application usage instructions.",
+        message: "Please enter the application usage instructions: ",
         validate: usageInput => {
             if (usageInput) {
                 return true;
@@ -66,7 +66,7 @@ const questions = [
     {
         type: "input",
         name: "contribute",
-        message: "Please enter the contribution instructions.",
+        message: "Please enter the contribution instructions: ",
         default: "Contributor Covenant",
         validate: contribInput => {
             if (contribInput) {
@@ -80,7 +80,7 @@ const questions = [
     {
         type: "input",
         name: "tests",
-        message: "Please enter your test instructions.",
+        message: "Please enter your test instructions: ",
         validate: testInput => {
             if (testInput) {
                 return true;
@@ -93,7 +93,7 @@ const questions = [
     {
         type: "input",
         name: "username",
-        message: "Please enter your GitHub username.",
+        message: "Please enter your GitHub username: ",
         validate: usernameInput => {
             if (usernameInput) {
                 return true;
@@ -106,7 +106,7 @@ const questions = [
     {
         type: "input",
         name: "email",
-        message: "Please enter your email address",
+        message: "Please enter your email address: ",
         validate: emailInput => {
             if (emailInput) {
                 return true;
