@@ -58,6 +58,12 @@ const questions = [
         }
     },
     {
+        type: "list",
+        name: "license",
+        message: "Please select a license for your project.",
+        choices: ["MIT", "GNU GPLv3", "Mozilla 2.0", "Apache 2.0", "Unlicensed"]
+    },
+    {
         type: "input",
         name: "contribute",
         message: "Please enter the contribution instructions.",
@@ -116,6 +122,7 @@ const mockData = {
     description: 'This application will prompt you for some information regarding your project, then generate a high quiality README file to include in your GitHub repo.',
     installation: "The application uses node.js, so you will need to have that already installed on your computer. Then simply clone the repo and from the terminal, run 'node index.js'.",
     usage: 'The application will ask you several questions regarding your project. As of now, each question is required. Answer all of the questions, and the application will then create a README file for you to include in your project. The README will include the following sections: Project Title, Project Description, Installation Instructions, Usage Instructions, License Information, Contribution Instructions, Test Info, and contact information for any questions.',
+    license: 'MIT',
     contribute: 'If you are interested in contributing to this project, you can contact me directly either through GitHub or by email at the address listed in the Questions section.',
     tests: 'No real  test instructions for this project.',
     username: 'jdlawton',
