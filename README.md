@@ -1,17 +1,7 @@
 
   # readme-generator
 
-  ![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
-
   ![MIT](https://img.shields.io/badge/license-MIT-brightgreen)
-
-  ![GNU GPLv3](https://img.shields.io/badge/license-GNU%20GPLv3-blue)
-
-  ![Mozilla 2.0](https://img.shields.io/badge/license-Mozilla%202.0-orange)
-
-  ![Apache 2.0](https://img.shields.io/badge/license-Apache%202.0-yellow)
-
-  ![Unlicensed](https://img.shields.io/badge/license-Unlicensed-red)
 
   ## Description
   This application will prompt you for some information regarding your project, then generate a high quiality README file to include in your GitHub repo.
