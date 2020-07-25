@@ -1,7 +1,7 @@
 //require statements for necessary application components
 const inquirer = require("inquirer");
-const generateMarkdown = require("./utils/generateMarkdown.js");
-const fs = require("fs");
+const generateMarkdown = require("./src/generateMarkdown.js");
+const writeToFile = require("./utils/createPage.js");
 
 // array of questions for user
 const questions = [
@@ -118,53 +118,25 @@ const questions = [
     }
 ];
 
-const mockData = {
-    title: 'readme-generator',
-    description: 'This application will prompt you for some information regarding your project, then generate a high quiality README file to include in your GitHub repo.',
-    installation: "The application uses node.js, so you will need to have that already installed on your computer. Then simply clone the repo and from the terminal, run 'node index.js'.",
-    usage: 'The application will ask you several questions regarding your project. As of now, each question is required. Answer all of the questions, and the application will then create a README file for you to include in your project. The README will include the following sections: Project Title, Project Description, Installation Instructions, Usage Instructions, License Information, Contribution Instructions, Test Info, and contact information for any questions.',
-    license: 'MIT',
-    contribute: 'Contributor Covenant',
-    tests: 'No real  test instructions for this project.',
-    username: 'jdlawton',
-    email: 'joe.lawton@outlook.com'
-  };
-
 // function to prompt user for input
 const promptUser = userQuest => {
     return inquirer.prompt(userQuest);
 }
 
-// function to write README file
-function writeToFile(fileName, data) {
-    fs.writeFile(fileName, data, err => {
-        if (err) {
-            console.log(err);
-            return;
-        }
-        console.log("File Written...");
-    });
-}
-
 // function to initialize program
-function init() {
+const init = () => {
     promptUser(questions)
         .then(userInput => {
-            //console.log(userInput);
             return generateMarkdown(userInput);
         })
         .then(pageData => {
-            writeToFile("./TEST.md", pageData);
+            writeToFile("./dist/README.md", pageData);
             console.log("All done!");
         })
-}
-
-function mockInit() {
-    const pageData = generateMarkdown(mockData)
-    writeToFile("./README.md", pageData);
-    
+        .catch(err => {
+            console.log(err);
+        });
 }
 
 // function call to initialize program
-//init();
-mockInit();
+init();
