@@ -30,6 +30,14 @@ const generateLicense = license => {
   }
 }
 
+const generateContribution = contribute => {
+  if (contribute === "Contributor Covenant") {
+    return `
+      This project follows the guidelines of the [Contributor Covenant](https://www.contributor-covenant.org/version/2/0/code_of_conduct/).
+      If you are interested in contributing, please contact me at my email in the Questions section of this README.
+    `
+  } else return contribute;
+}
 
 // function to generate markdown for README
 function generateMarkdown(data) {
@@ -40,7 +48,6 @@ function generateMarkdown(data) {
   //before I start creating the document, this will select the badge and description that corresponds with the user's choice and return an object with both values which can
   //then be plugged into the README file in their appropriate places.
   const licenseInfo = generateLicense(license);
-  console.log(licenseInfo);
   //console.log(data);
   return `
   # ${title}
@@ -69,7 +76,7 @@ function generateMarkdown(data) {
   ${licenseInfo.description}
 
   ## Contribution
-  ${contribute}
+  ${generateContribution(contribute)}
 
   ## Tests
   ${tests}

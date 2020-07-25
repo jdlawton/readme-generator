@@ -25,7 +25,10 @@
   This software is licensed under the [MIT license](https://choosealicense.com/licenses/mit/).
 
   ## Contribution
-  If you are interested in contributing to this project, you can contact me directly either through GitHub or by email at the address listed in the Questions section.
+
+  This project follows the guidelines of the [Contributor Covenant](https://www.contributor-covenant.org/version/2/0/code_of_conduct/).
+  If you are interested in contributing, please contact me at my email in the Questions section of this README.
+    
 
   ## Tests
   No real  test instructions for this project.
