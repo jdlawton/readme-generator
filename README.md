@@ -6,6 +6,9 @@
   ## Description
   This project was built to provide an easier way to create quiality README files for GitHub projects. When run, a complete README markdown file will be created for you to then copy to your GitHub repository. The README includes the following sections: project title, project description, table of contents, installation instructions, usage instructions, license information, contribution instructions, test information, and contact information for any questions.
 
+  ## Walkthrough Video
+  https://drive.google.com/file/d/1Ztetxbrlk-aV4lQ9vZBSM6Ha-pBpbC1y/view
+
   ## Table of Contents
   * [Description](#description)
   * [Installation](#installation)
